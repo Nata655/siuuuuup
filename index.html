@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    body{
+background-color: gold;
+font-size: 20px;
+font-family: Arial;
+color:crimson;
+
+    }
+    .contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        gap: 35px;
+        top: -500px;
+    }
+
+    .estilo{
+        display: flex;
+    justify-content: center;
+    position: relative;
+    top: -110px;
+    }
+
+    .boton{ padding: 15px 30px;
+        cursor: pointer;
+border-radius: 10px;
+background-color: rgb(26, 103, 247);
+color: rgb(0, 0, 0);
+font-size:  23px;
+border: 2px solid rgb(26, 103, 247);
+    }
+
+ button:hover{
+    border: 2px solid crimson;
+    box-shadow: 0 0 15px crimson;
+    color: crimson;
+    background-color: transparent;
+ }
+    </style>
+</head>
+
+<body>
+<h1 align="center"> Hola, ¿Me perdonas? </h1>
+
+<div class="contenedor">
+
+<button id="botonSi" class="boton"> Si</button>
+
+<button id="botonNo" class="boton"> No</button> 
+</div>
+
+<div class="estilo">
+<img src="Minion Triste.jpg" alt="Minion Triste" height="200px">
+</div>
+
+
+
+<script>
+
+    const botonSi = document.getElementById('botonSi');
+    const botonNo = document.getElementById('botonNo');
+
+    botonSi.addEventListener('click', function() {
+        window.open("http://127.0.0.1:5500/induct.html");
+    });
+
+    botonNo.addEventListener('click', () => {
+        alert('Error');
+    });
+</script>
+
+
+</body>
+</html>
